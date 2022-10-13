@@ -1,5 +1,5 @@
 # trybe-exercicios
-First exercise of GitHub
+vitorvelosodev - Repositório com projetos da Trybe
 
 # Meu repositório de exercícios
 
