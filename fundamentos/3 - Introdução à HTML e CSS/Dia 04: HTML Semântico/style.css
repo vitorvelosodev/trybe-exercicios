@@ -119,6 +119,9 @@ td {
 
 .image-crop {
     height: 400px;
+    width: 100%;
     overflow: hidden;
     background-image: url(https://static.inaturalist.org/photos/11264651/large.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
