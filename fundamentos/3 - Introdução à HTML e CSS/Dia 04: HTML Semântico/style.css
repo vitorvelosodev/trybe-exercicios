@@ -1,0 +1,124 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Roboto Black';
+    font-weight: 900;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:link{
+    color: black;
+    font-family: roboto;
+    font-size: 1.4em;
+}
+
+#site-title {
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+}
+
+.nav-menu {
+    padding: 10px;
+    background-color:rgb(116, 220, 255);
+    text-align: center;
+}
+
+.list-inline{
+    padding: 10px 60px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-family: roboto;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.img-float-right {
+    float: right;
+    max-width: 250px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+.text-p {
+    padding: 0px 20px;
+}
+
+.p-table-height {
+    min-height: 300px;
+}
+
+.min-height {
+    min-height: 300px;
+}
+
+em {
+    font-style: italic;
+}
+
+.table-float-right {
+    float: right;
+    margin: 0 25px 25px 25px;
+    padding: 0px;
+    line-height: 1.4em;
+    border: 3px solid black;
+}
+
+tr td {
+    background-color: rgb(188, 222, 232);
+}
+
+td {
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.td-1 {
+    background-color: rgb(229, 229, 229);
+}
+
+.img-alone {
+    display: block;
+    margin: 10px 0px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    object-fit:contain;
+    max-width: 100%;
+}
+
+.image-crop {
+    height: 400px;
+    overflow: hidden;
+    background-image: url(https://static.inaturalist.org/photos/11264651/large.jpeg);
+}
