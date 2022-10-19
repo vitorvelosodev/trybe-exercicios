@@ -33,8 +33,9 @@ a:visited, a:link{
 
 .nav-menu {
     padding: 10px;
-    background-color:rgb(116, 220, 255);
+    background-color:rgb(155, 213, 230);
     text-align: center;
+    border-bottom: 2px solid rgb(173, 173, 173);
 }
 
 .list-inline{
@@ -69,6 +70,17 @@ h3 {
 
 p {
     line-height: 1.2em;
+    text-align: justify;
+}
+
+.sec-width {
+    width: 60%;
+    display: inline-block;
+}
+
+aside {
+    width: 39%;
+    display: inline-block;
 }
 
 .text-p {
@@ -80,7 +92,7 @@ p {
 }
 
 .min-height {
-    min-height: 300px;
+
 }
 
 em {
@@ -92,7 +104,10 @@ em {
     margin: 0 25px 25px 25px;
     padding: 0px;
     line-height: 1.4em;
-    border: 3px solid black;
+    border-left: 3px solid rgb(97, 97, 97);
+    border-bottom: 3px solid rgb(97, 97, 97);
+    border-top: 3px solid rgb(212, 212, 212);
+    border-right: 3px solid rgb(212, 212, 212);
 }
 
 tr td {
@@ -117,11 +132,46 @@ td {
     max-width: 100%;
 }
 
-.image-crop {
+.image-bg-full {
+    /* overflow: hidden; */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Odontodactylus_scyllarus1.jpg/1920px-Odontodactylus_scyllarus1.jpg);
+    background-size: cover;
     height: 400px;
-    width: 100%;
-    overflow: hidden;
-    background-image: url(https://static.inaturalist.org/photos/11264651/large.jpeg);
+    background-color: black;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position-y: 40%;
+    max-width: 100%!important
+}
+
+.container-over-bg {
+    margin-left: 10%;
+    padding-top: 280px;
+}
+
+.text-over-bg1 {
+    display: inline;
+    font-family: 'Noto Sans Mono';
+    font-size: 1.4em;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.text-over-bg2 {
+    display: inline;
+    font-family: 'Noto Sans Mono';
+    font-size: 1.4em;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.p-padding-top {
+    padding: 20px;
+}
+
+.img-float-left {
+    float: left;
+    height: 280px;
+    padding: 20px;
 }
