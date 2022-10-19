@@ -62,10 +62,11 @@ h3 {
 }
 
 .img-float-right {
-    float: right;
+    padding: 10px;
+    padding-bottom: 5px;
+    text-align: center;
     max-width: 250px;
-    margin-left: 15px;
-    margin-right: 20px;
+
 }
 
 p {
@@ -74,13 +75,25 @@ p {
 }
 
 .sec-width {
-    width: 60%;
+    width: 65%;
+    max-width: 75%;
     display: inline-block;
 }
 
 aside {
-    width: 39%;
+    border-left: 1px solid rgb(197, 197, 197);
+    position: absolute;
+    width: 30%;
     display: inline-block;
+    text-align: center;
+    max-width: 300px;
+    padding-left: 10px;
+}
+
+video {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-p {
@@ -100,9 +113,10 @@ em {
 }
 
 .table-float-right {
-    float: right;
-    margin: 0 25px 25px 25px;
-    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px;
     line-height: 1.4em;
     border-left: 3px solid rgb(97, 97, 97);
     border-bottom: 3px solid rgb(97, 97, 97);
@@ -175,3 +189,22 @@ td {
     height: 280px;
     padding: 20px;
 }
+
+.p-with-aside {
+    min-height: 660px;
+}
+
+.section-last {
+    height: 320px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(214, 214, 214);
+}
+
+@media only screen and (max-width: 1200px) {
+    .sec-width {
+      min-width: 50%;
+    } 
