@@ -13,6 +13,8 @@ function decideWinner(winnerMove) {
     } else {
         return 'There was an error in the game. Check for player choices if they are correct moves';
     }
+
+    return 'Error' // If it got this far is because there was an error
 };
 
 function checkWinnerGame(p1, p2) {
