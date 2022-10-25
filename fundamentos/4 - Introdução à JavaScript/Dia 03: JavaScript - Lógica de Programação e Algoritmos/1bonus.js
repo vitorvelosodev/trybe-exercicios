@@ -91,8 +91,3 @@ function trianguloVazado(n) {
 
         
 };
-
-//    *
-//   * *
-//  *   *
-// *******
