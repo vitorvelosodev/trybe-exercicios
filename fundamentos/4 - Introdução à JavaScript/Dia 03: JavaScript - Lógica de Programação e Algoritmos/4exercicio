@@ -1,0 +1,18 @@
+let maiorPrimo = 2, divCount = 0;
+
+for (let i = 2; i <= 50; i += 1) {
+    divCount = 0;
+    for (let j = 2; j <= i; j += 1) {
+        if (i % j == 0) {
+            divCount += 1;
+        }
+        if (divCount > 1) {
+            break;
+        }
+    }
+    if (divCount == 1){
+        maiorPrimo = i;
+        console.log(maiorPrimo);
+    }
+}
+
