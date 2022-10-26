@@ -30,3 +30,4 @@ for (let i = 0; i < basket.length; i += 1) {
 }
 
 console.log(objFrutas);
+console.log('Sua cesta possui ',objFrutas.Melancia,' ',Object.keys(objFrutas)[0],', ',objFrutas.Abacate,' ',Object.keys(objFrutas)[1],'...');
