@@ -72,7 +72,7 @@ label {
 .my-tasks {
   clear: both;
   float: left;
-  height: 100px;
+  /* height: 100px; */
   vertical-align: middle;
   width: 49%;
 }
