@@ -1,0 +1,36 @@
+<!-- arquivo index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>  
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+    let pai = document.querySelector('#pai');
+    document.querySelector('#primeiroFilho');
+
+    pai.removeChild(document.querySelector('#primeiroFilho'));
+    document.querySelector('#elementoOndeVoceEsta').removeChild(document.querySelector('#segundoEUltimoFilhoDoFilho'));
+    pai.removeChild(document.querySelector('#terceiroFilho'));
+    pai.removeChild(document.querySelector('#quartoEUltimoFilho'));
+
+  </script>
+</body>
+</html>
