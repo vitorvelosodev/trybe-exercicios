@@ -42,6 +42,10 @@ for (let i = 0; i < decemberDaysList.length; i += 1) {
   }
 }
 
+for (let i = 0; i < 2; i += 1) {
+  document.querySelectorAll('.day')[i].classList.add('other-month');
+}
+
 // Parte 2
 let button = document.createElement('button');
 let buttonPlace = document.getElementsByClassName('buttons-container')[0];
