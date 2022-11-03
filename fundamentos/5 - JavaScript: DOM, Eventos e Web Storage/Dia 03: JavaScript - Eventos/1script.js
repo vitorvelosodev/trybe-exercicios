@@ -27,8 +27,8 @@ for (let i = 0; i < decemberDaysList.length; i += 1) {
   listDays.innerHTML = decemberDaysList[i];
   daysOfWeek.appendChild(listDays);
   // Checks for holidays
-  for (let j = 0; j < 3; j += 1) {
-    let daysH = 23 + j;
+  for (let j = 0; j < 2; j += 1) {
+    let daysH = 24 + j;
     if (listDays.innerHTML.includes(daysH)) {
       listDays.classList.add('holiday');
     }
@@ -49,9 +49,6 @@ button.classList.add('btn-holiday');
 button.innerHTML = 'Feriados';
 buttonPlace.appendChild(button);
 
-// FOR DEBUGGING
-// console.log(buttonPlace);
-
 // Parte 3
 const changeColor = () => {
   let feriados = document.getElementsByClassName('holiday');
@@ -64,11 +61,7 @@ const changeColor = () => {
       feriados[i].style.backgroundColor = 'rgb(238,238,238)';
     }
   }
-  // FOR DEBUG
-  // console.log('executado');
 }
-// FOR DEBUG
-// console.log(document.getElementsByClassName('holiday'));
 
 button.addEventListener('click', changeColor);
 
@@ -86,7 +79,7 @@ for (let j = 0; j < 4; j += 1) {
   let daysF = 4 + (7 * j);
   fridaysNum[j] = daysF;
 }
-console.log(fridaysNum);
+// console.log(fridaysNum);
 
 const changeTextFriday = () => {
   let fridays = document.getElementsByClassName('friday');
@@ -106,69 +99,102 @@ buttonFriday.addEventListener('click', changeTextFriday);
 // Parte 6
 
 const zoomIn = () => {
-  let day = document.querySelector('#days');
-  console.log(days);
-  day.addEventListener('mouseover', (event) => {
-    event.target.style.transform = 'scale(1.5)';
-  });
+  let day = document.querySelectorAll('.day');
+  console.log(day);
+  for (let i = 0; i < day.length; i += 1) {
+    day[i].addEventListener('mouseover', (event) => {
+      event.target.style.transform = 'scale(1.5)';
+    });
+  }
 }
 
 const zoomOut = () => {
-  let day = document.querySelector('#days');
-  console.log(days);
-  day.addEventListener('mouseout', (event) => {
-    event.target.style.transform = 'scale(1)';
-  });
+  let day = document.querySelectorAll('.day');
+  for (let i = 0; i < day.length; i += 1) {
+    day[i].addEventListener('mouseout', (event) => {
+      event.target.style.transform = 'scale(1)';
+    });
+  }
 }
+
 
 zoomIn();
 zoomOut();
 
-console.log(document.querySelector('#days'));
-
-// Prof solution
-// document.querySelector('#days').addEventListener('mouseenter', zoomIn);
-// document.querySelector('#days').addEventListener('mouseleave', zoomOut);
-
-// //
-// const dayMouseOver = () => {
-//   let days = document.querySelector('#days');
-//   days.addEventListener('mouseover', (event) => {
-//     event.target.style.fontSize = '30px';
-//     event.target.style.fontWeight = '600'; // Ele pega o evento alvo e altera o estilo de fontWeight para 600
-//   });
-// }
-// const dayMouseOut = () => {
-//   let days = document.querySelector('#days');
-//   days.addEventListener('mouseout', (event) => {
-//     event.target.style.fontSize = '20px';
-//     event.target.style.fontWeight = '200'; // Ele pega o evento alvo e altera o estilo de fontWeight para 200
-//   });
-// }
-
-// dayMouseOver();
-// dayMouseOut();
-
 // Parte 7
 
-let buttonAdd = document.getElementById('btn-add');
-let inputField = document.getElementById('task-input');
 let divMyTasks = document.getElementsByClassName('my-tasks')[0];
-console.log(inputField.InnetHTML);
 
-const createTask = () => {
+const createTask = (textinside) => {
   let span = document.createElement('span');
-  span.innerText = inputField.value;
+  span.classList.add('task');
+  span.innerText = textinside;
   divMyTasks.appendChild(span);
 }
 
-buttonAdd.addEventListener('click', createTask);
+createTask('cozinhando');
 
 // Parte 8
 
-const changeColor = (color) => {
-  let newElement = document.createElement('div');
-  newElement.classList.add('task');
-  newElement.style.backgroundColor = color;
-  
+const createDivTask = (textinside, color) => {
+  let divTask = document.createElement('div');
+  divTask.classList.add('task');
+  divTask.innerText = textinside;
+  divTask.classList.add(color);
+  // divTask.style.backgroundColor = color;
+  divMyTasks.appendChild(divTask);
 }
+
+createDivTask('dormir', 'task-bg-color');
+
+// Parte 9
+
+let myTasks = document.getElementsByClassName('task');
+
+const selectClass = (event) => {
+  let selectedClass = document.getElementsByClassName('task selected');
+  if (selectedClass.length == 0) {
+    // console.log('executado selectClass incluindo');
+    event.target.className = 'task selected task-bg-color';
+  } else {
+    // console.log('executado selectClass excluindo');
+    event.target.className = 'task task-bg-color';
+  }
+}
+
+for (let i = 0; i < myTasks.length; i += 1) {
+  myTasks[i].addEventListener('click', selectClass);
+}
+
+// Parte 10
+
+const setColorFromTask = () => {
+  let day = document.querySelectorAll('.day');
+  for (let i = 0; i < day.length; i += 1) {
+    day[i].addEventListener('click', (event) => {
+      event.target.classList.toggle('task-bg-color');
+    });
+  }
+}
+
+setColorFromTask();
+
+// Bonus
+let buttonCompromisso = document.querySelector('#btn-add');
+let inputField = document.querySelector('#task-input');
+
+function addCompromisso() {
+  let localToAdd = document.querySelector('.input-container');
+  let newCompromisso = document.createElement('span');
+  newCompromisso.classList.add('task');
+  newCompromisso.innerHTML = inputField.value;
+  localToAdd.appendChild(newCompromisso);
+}
+
+buttonCompromisso.addEventListener('click', () => {
+  if (inputField.value == '') {
+    alert('bota alguma coisa no campo seu animal');
+  } else {
+    addCompromisso();
+  }
+});

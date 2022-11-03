@@ -72,26 +72,29 @@ label {
 .my-tasks {
   clear: both;
   float: left;
-  /* height: 100px; */
+  height: 100px;
   vertical-align: middle;
   width: 49%;
 }
 
 .my-tasks div {
   border: 1px solid black;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: inline-block;
-  height: 35px;
+  display: block;
+  /* height: 35px; */
   margin-left: 10px;
   vertical-align: middle;
-  width: 35px;
+  /* width: 35px; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.my-tasks div:hover {
+/* .my-tasks div:hover {
   height: 45px;
   width: 45px;
-}
+} */
 
 .my-tasks span {
   color: #666;
@@ -152,4 +155,17 @@ label {
   font-size: 20px;
   margin: 0px;
   padding: 10px 0;
+  background-color: rgb(194, 194, 194);
+}
+
+.task {
+  display: block;
+}
+
+.selected {
+  font-weight: bold !important;
+}
+
+div.task-bg-color, li.task-bg-color{
+  background-color: rgb(213, 157, 132);
 }
