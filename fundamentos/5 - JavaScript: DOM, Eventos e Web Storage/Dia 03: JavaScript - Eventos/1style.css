@@ -6,6 +6,9 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #eee;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button {
@@ -25,6 +28,8 @@ button {
 
 #days {
   margin: 0;
+  padding: 0px;
+  border: black solid 1px;
 }
 
 #days li {
@@ -35,6 +40,10 @@ button {
   text-align: center;
   vertical-align: middle;
   width: 13.6%;
+}
+
+.other-month {
+  color: rgb(201, 201, 201) !important;
 }
 
 .input-container {
@@ -56,6 +65,7 @@ label {
 }
 
 .month-container {
+  border: black solid 1px;
   background: green;
   padding: 40px 25px;
   text-align: center;
@@ -140,7 +150,7 @@ label {
 }
 
 .week-days-container {
-  margin-left: 35px;
+  /* padding-left: 35px; */
 }
 
 .week-days li {
@@ -156,6 +166,7 @@ label {
   margin: 0px;
   padding: 10px 0;
   background-color: rgb(194, 194, 194);
+  border: black solid 1px;
 }
 
 .task {
@@ -168,4 +179,9 @@ label {
 
 div.task-bg-color, li.task-bg-color{
   background-color: rgb(213, 157, 132);
+}
+
+.day {
+  /* height: 40px; */
+  vertical-align: middle !important;
 }
