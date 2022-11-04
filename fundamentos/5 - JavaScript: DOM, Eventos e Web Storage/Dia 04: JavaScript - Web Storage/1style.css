@@ -40,26 +40,27 @@ main {
   vertical-align: top;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
 /* Button changes */
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*
-font-family: 'Bree Serif', serif;
-font-family: 'Noto Sans Mono', monospace;
-font-family: 'Roboto', sans-serif;
-*/
-
+/* Dark mode */
 .dark-mode {
   background-color: #2d2e30;
   color: #ededed;
 }
 
 .light-mode {
-  background-color: #e2e2e2;
+  background-color: #f1f1f1;
   color: #272727;
 }
 
+/* Text color */
 .tc-light-gray {
   color: #ededed !important;
 }
@@ -73,4 +74,58 @@ font-family: 'Roboto', sans-serif;
 }
 .tc-black {
   color: #000000 !important;
+}
+
+/* Font-size */
+
+.fs-small {
+  font-size: small;
+}
+
+.fs-medium {
+  font-size: medium;
+}
+
+.fs-big {
+  font-size: large;
+}
+
+.fs-bigger {
+  font-size: larger;
+}
+
+/* Line-spacing */
+
+.ls-none {
+  line-height: 80%;
+}
+
+.ls-small {
+  line-height: 116.5%;
+}
+
+.ls-medium {
+  line-height: 150%;
+}
+
+.ls-high {
+  line-height: 200%;
+}
+
+/* Font-family */
+
+.ff-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ff-bree-serif {
+  font-family: 'Bree Serif', serif;
+}
+
+.ff-noto-sans {
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+.ff-helvetica {
+  font-family: Helvetica, sans-serif;
 }
