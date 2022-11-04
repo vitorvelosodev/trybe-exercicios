@@ -1,0 +1,76 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+
+body {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e2e2e2;
+  color: #272727;
+}
+
+#header {
+  margin-bottom: 10px;
+  padding: 20px;
+  border-bottom: black solid 2px;
+  text-align: center;
+}
+
+main {
+  margin: 10px;
+}
+
+.btn-row {
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  ;
+}
+
+.btn {
+  width: 90%;
+  margin: 4px;
+}
+
+#bg-color {
+  vertical-align: top;
+}
+
+/* Button changes */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+font-family: 'Bree Serif', serif;
+font-family: 'Noto Sans Mono', monospace;
+font-family: 'Roboto', sans-serif;
+*/
+
+.dark-mode {
+  background-color: #2d2e30;
+  color: #ededed;
+}
+
+.light-mode {
+  background-color: #e2e2e2;
+  color: #272727;
+}
+
+.tc-light-gray {
+  color: #ededed !important;
+}
+
+.tc-medium-gray {
+  color: #b8b8b8 !important;
+}
+
+.tc-darker-gray {
+  color: #474747 !important;
+}
+.tc-black {
+  color: #000000 !important;
+}
