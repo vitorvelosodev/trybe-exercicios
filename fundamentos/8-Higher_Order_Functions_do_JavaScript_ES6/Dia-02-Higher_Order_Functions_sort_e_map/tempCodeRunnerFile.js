@@ -14,4 +14,4 @@ function juntarArrays(comida, gosto) {
   });
 }
 
-console.log(juntarArrays(products, gosto));
+console.log(updateProducts(products, gosto));

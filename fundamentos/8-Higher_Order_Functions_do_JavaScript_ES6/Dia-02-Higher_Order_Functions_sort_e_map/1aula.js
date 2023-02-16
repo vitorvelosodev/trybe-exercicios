@@ -30,7 +30,7 @@ function juntarArrays(comida, gosto) {
   });
 }
 
-console.log(juntarArrays(products, gosto));
+console.log(updateProducts(products, gosto));
 
 // const listProducts = updateProducts(products, prices);
 // console.log(listProducts);
